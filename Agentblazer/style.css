@@ -1,0 +1,89 @@
+
+:root {
+    --primary-color: #4a4a4a;
+    --accent-color: #005f73;
+    --background-color: #fdfdfd;
+    --light-gray: #e9ecef;
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-display: 'Shadows Into Light', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin: 3rem auto;
+    width: 80%;
+}
+
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    gap: 15px;
+}
+
+#club-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    position: relative;
+    top: -10px;
+}
+
+header .club-logo {
+    width: 150px;
+    height: auto;
+}
+
+header .university-logo {
+    width: 75px;
+    height: auto;
+}
+
+
+nav {
+    background-color: #fff;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 10px 5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
